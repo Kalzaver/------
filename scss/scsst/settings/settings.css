@@ -1,0 +1,52 @@
+.container {
+  width: 220px;
+  height: 50px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 8%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.nav_list {
+  display: flex;
+}
+
+.nav_list .message {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 35px;
+}
+
+.nav_list .user {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 35px;
+}
+
+.nav_list .settings {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 35px;
+}
+
+.nav_list .Sett_List {
+  position: relative;
+  display: block;
+  background-color: rgb(28, 28, 30);
+  width: 200px;
+  height: 150px;
+}
+
+.nav_list .Sett_List .THM {
+  display: flex;
+}
+
+.nav_list .Sett_List .THM .Moom {
+  width: 10px;
+}
+
+/*# sourceMappingURL=settings.css.map */

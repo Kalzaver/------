@@ -1,0 +1,14 @@
+.grid-Scroll {
+    //background-color: rgba(255, 255, 0, 0.5);
+
+    width: auto;
+    height: auto;
+
+    position: relative;
+    margin-top: 18%;
+
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 5%;
+    //grid-row-gap: $row_gap;
+}

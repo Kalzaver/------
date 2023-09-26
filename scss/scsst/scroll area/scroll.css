@@ -1,0 +1,9 @@
+.grid-Scroll {
+  width: auto;
+  height: auto;
+  position: relative;
+  margin-top: 18%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 5%;
+}/*# sourceMappingURL=scroll.css.map */

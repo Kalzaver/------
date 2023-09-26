@@ -1,0 +1,55 @@
+@import "/scss/base/vars";
+
+.container {
+    width: 220px;
+    height: 50px;
+
+    padding: 5px 10px;
+
+    position: absolute;
+    top: 8%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+
+.nav_list {
+    display: flex;
+
+    .message {
+        margin-right: 10px;
+        margin-left: 10px;
+
+        width: 35px;
+    }
+
+    .user {
+        margin-right: 10px;
+        margin-left: 10px;
+
+        width: 35px;
+    }
+
+    .settings {
+        margin-right: 10px;
+        margin-left: 10px;
+
+        width: 35px;
+    }
+
+    .Sett_List {
+        position: relative;
+        display: block;
+        background-color: rgba(28, 28, 30, 1);
+        width: 200px;
+        height: 150px;
+
+        .THM {
+            display: flex;
+
+            .Moom {
+                width: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/scss/scsst/mainPageWithSearchBar/main.css"/>
+    <link rel="stylesheet" href="/scss/scsst/settings/settings.css">
+    <link rel="stylesheet" href="/scss/scsst/scroll area/scroll.css">
+
+    <!-- <link rel="stylesheet" href="./scss/modile-version.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+
+    <div class="screen">
+        <div class="SearchBar SearchBar_phone">
+            <form action="#" class="search-bar search-bar_phone">
+              <div class="texting texting_phone">
+                <input type="text" placeholder="Search..."/>
+              </div>
+                <button class="btn btn_phone" type="submit">
+                  <!-- <i class="bx bx-search-alt-2 glass glass_phone"></i> -->
+                  <img class="glass glass_phone" src="/img/F_GLASS.svg" alt="">
+                </button>
+            </form>
+        </div>
+
+        <div class="container">
+            <div class="nav_list_da">
+                <div class="nav_list">
+                  <button class="message"><img src="/img/F_DIALOG.svg"></button>
+                  <button class="user"><img src="/img/F_USER.svg"></button>
+                  <button class="settings"><img src="/img/set.svg"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="listOfNames">
+            <a href="" class="name">Library</a>
+            <a href="" class="name">All</a>
+            <a href="" class="name">IT</a>
+            <a href="" class="name">Art</a>
+            <a href="" class="name">Other</a>
+            <a href="" class="name">Last</a>
+        </div> -->
+      
+        <div class="grid-Scroll" id="scrolling">
+            
+            <div class="box b1" id="BOOOOX">
+                <img src="/img/Image.png" alt="">
+            </div>
+
+            <div class="box b2">
+                <img src="/img/Image.png" alt="">
+            </div>
+
+            <div class="box b3">
+                <img src="/img/Image.png" alt="">
+            </div>
+
+            <div class="box b4">
+                <img src="/img/Image.png" alt="">
+            </div>
+
+            <div class="box b5">
+                <img src="/img/Image.png" alt="">
+            </div>
+
+            <div class="box b6">
+                <img src="/img/Image.png" alt="">
+            </div>
+            
+            <div class="box b7">
+                <img src="/img/Image.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+  <script>
+    
+    var scrollContainer = document.getElementById("scrolling");// Получаем ссылку на контейнер
+
+    function generateElementsOnScroll() {// Функция, которая будет вызываться при прокрутке страницы
+        
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) { // Проверяем, достигли ли мы конца страницы
+
+        var element = document.getElementById("BOOOOX"); // Получаем элемент, который нужно скопировать
+        var clone = element.cloneNode(true); // Создаем копию элемента с помощью cloneNode
+        document.body.appendChild(clone); // Добавляем копию элемента в конец документа
+
+        scrollContainer.appendChild(clone);// Добавляем новый элемент в контейнер
+      }
+    }
+  
+    window.addEventListener("scroll", generateElementsOnScroll);// Добавляем обработчик события прокрутки страницы
+
+  </script>
+  </body>
+</html>
+
+
+ <!-- <script src='/main.js'></script> -->
+  <!-- <script>
+    let myBtn = document.getElementById("BUTT");
+
+    myBtn.addEventListener("click", function(e){ // .addEventListener работает только с .getElementById
+      let name = prompt("Tell me your id!"); // позволяет вводить свою инфу в консоль браузера
+      console.log(name); //выводит в консоль браузера то, что написано в скобках
+      
+      document.body.innerHTML = "<button> Welcome, " + name + "<button>"; //создаёт элемент типа <...> и добавляет приписку
+    });
+  </script> -->
